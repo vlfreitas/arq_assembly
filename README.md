@@ -1,0 +1,2 @@
+# arq_assembly
+DETECÇÃO DE ERROS PELO MÉTODO DA PARIDADE
