@@ -7,7 +7,6 @@ Ex:
 
 		
 	  [->] - bits de paridade par anexados
-	   |
 H	= [0] 1 0 0 1 0 0 0<p>
 E  	= [1] 1 0 0 0 1 0 1<p>
 L	= [1] 1 0 0 1 1 0 0<p>
