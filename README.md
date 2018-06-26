@@ -3,6 +3,7 @@ DETECÇÃO DE ERROS PELO MÉTODO DA PARIDADE
 
 Links uteis:
 
+http://www.numaboa.com.br/informatica/tutos/assembly/1122-instrucoes-comuns
 https://stackoverflow.com/questions/29292455/parity-of-a-number-assembly-8086
 https://gist.github.com/masterrr/4498618
 https://stackoverflow.com/questions/49116747/assembly-check-if-number-is-even
