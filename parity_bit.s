@@ -1,23 +1,39 @@
-.data
-	# variáveis do programa
-titulo:	.asciiz "-- DETECÇÃO DE ERROS PELO MÉTODO DA PARIDADE -- \n"
-texto:	.asciiz "Digite um numero: \n"
+section   .text         
+global       _start         
 
+_start:   
 
-	.text
-	# Imprimi string 'titulo' na tela
-main:	la $a0, titulo
-	addi $v0, $zero, 4
-	syscall
+   push    nl
+   mov    eax,   valor
 
-	# Imprimi string 'texto' na tela
-	la $a0, texto
-	addi $v0, $zero, 4
-	syscall
-  
-  # Imprimi o resultado
-	add $a0, $s2, $zero
-	addi $v0, $zero, 1
-	syscall
+_empilha:
 
-	jr $ra
+   xor    edx,   edx
+   mov    ecx,   0x02
+   div   ecx
+   add   edx,   digit
+   push    edx
+   cmp    eax,   0x00
+   jg    _empilha
+
+_escreve:
+
+   mov    eax,   0x04
+   mov    ebx,   0x01         
+   pop    ecx
+   mov    edx,   0x01
+   int    0x80
+
+   cmp    ecx,   nl
+   jne   _escreve
+
+_fim:
+
+   mov    eax,   0x01
+   int    0x80
+
+section      .rodata
+
+   digit   db   "01"
+   nl   db   `\n`
+   valor   equ   4952488
