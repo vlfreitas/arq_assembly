@@ -6,14 +6,13 @@ Determinar o cÃ³digo ASCII de cada caractere da mensagem. Em seguida, conte o nÃ
 Ex:
 
 		
-	   _ - bits de paridade par anexados	
-	  / \	
+	  [->] - bits de paridade par anexados
 	   |
-H	= [0] 1 0 0 1 0 0 0 
-E  	= [1] 1 0 0 0 1 0 1
-L	= [1] 1 0 0 1 1 0 0
-L	= [1] 1 0 0 1 1 0 0
-O	= [1] 1 0 0 1 1 1 1
+H	= [0] 1 0 0 1 0 0 0<p>
+E  	= [1] 1 0 0 0 1 0 1<p>
+L	= [1] 1 0 0 1 1 0 0<p>
+L	= [1] 1 0 0 1 1 0 0<p>
+O	= [1] 1 0 0 1 1 1 1<p>
 
 
 
