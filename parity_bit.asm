@@ -30,11 +30,10 @@ _escreve:
 _fim:
 
    mov    eax,   0x01
-   and	  eax,   11111111b
    int    0x80
 
 section      .rodata
 
    digit   db   "01"
    nl   db   `\n`
-   valor   equ   7
+   valor   equ   72
